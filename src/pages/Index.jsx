@@ -69,9 +69,9 @@ const Index = () => {
   return (
     <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
       <VStack spacing={4}>
-        <Text fontSize="2xl">Ñañi Ñird</Text>
-        <Box position="relative" width="100%" height="500px" bg="pink.100" overflow="hidden" onClick={handleJump}>
-          <Box position="absolute" top={`${birdPosition}px`} left="50px" width={`${BIRD_SIZE}px`} height={`${BIRD_SIZE}px`} bg="purple.400" borderRadius="50%" />
+        <Text fontSize="2xl">Flappy Bird</Text>
+        <Box position="relative" width="100%" height="500px" bg="blue.100" overflow="hidden" onClick={handleJump}>
+          <Box position="absolute" top={`${birdPosition}px`} left="50px" width={`${BIRD_SIZE}px`} height={`${BIRD_SIZE}px`} bg="yellow.400" borderRadius="50%" />
           <Box position="absolute" top="0" left={`${obstacleLeft}px`} width={`${OBSTACLE_WIDTH}px`} height={`${obstacleHeight}px`} bg="green.500" />
           <Box position="absolute" top={`${obstacleHeight + OBSTACLE_GAP}px`} left={`${obstacleLeft}px`} width={`${OBSTACLE_WIDTH}px`} height={`${window.innerHeight - obstacleHeight - OBSTACLE_GAP}px`} bg="green.500" />
         </Box>
